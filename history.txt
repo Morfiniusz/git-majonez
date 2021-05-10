@@ -1,0 +1,34 @@
+    1  mkdir zadanie_1
+    2  cd zadanie_1/
+    3  mkdir git-majonez
+    4  cd git-majonez/
+    5  touch main.cpp
+    6  code main.cpp 
+    7  git init
+    8  git status
+    9  git add main.cpp 
+   10  git commit . -m "Initial commit"
+   11  code main.cpp 
+   12  git status
+   13  git commit . -m "Farewell changed"
+   14  git status
+   15  git log
+   16  git remote add origin https://github.com/Morfiniusz/git-majonez.git
+   17  git push -u origin master
+   18  gitk
+   19  git checkout -b cs
+   20  git log --oneline
+   21  git reset 5304110
+   22  gitk
+   23  code main.cpp 
+   24  git commit . -m "Greetings"
+   25  git push origin cs
+   26  git checkout master
+   27  git merge cs
+   28  git mergetool -t meld
+   29  git status
+   30  git commit . -m "Merge branch 'cs'"
+   31  git commit  -m "Merge branch 'cs'"
+   32  gitk
+   33  touch history.txt
+   34  history > history.txt 
